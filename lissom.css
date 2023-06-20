@@ -172,7 +172,8 @@ button:disabled {
 }
 
 button:focus-visible,
-input[type='submit']:focus-visible {
+input:focus-visible,
+textarea:focus-visible {
     box-shadow: 0 0 0 0.2em var(--light), 0 0 0 0.4em var(--accent-ui);
     outline: none;
     z-index: 2;
@@ -207,6 +208,24 @@ dialog {
 
 ::backdrop {
     background: rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1em 0;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div:has(input[type="checkbox"]) {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2em;
 }
 
 h1,
@@ -301,6 +320,27 @@ img {
 
 img:hover {
     border-radius: 0;
+}
+
+input,
+textarea {
+    color: var(--primary);
+    background-color: var(--tertiary);
+    border: 1px solid var(--secondary);
+    padding: 0.4em 1em;
+    border-radius: 0.3em; 
+    font-size: inherit;
+    font-family: inherit;
+    position: relative;
+}
+
+input:disabled,
+textarea:disabled {
+    cursor: not-allowed;
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+    opacity: 0.5;
 }
 
 kbd {
