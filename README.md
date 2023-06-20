@@ -4,3 +4,7 @@
 **Lissom.CSS is a classless, minimalist, accessible, and themeable CSS library that aims to address the issue of styling web pages.**
 
 [Demo](https://lissomware.github.io/css/)
+
+---
+
+For minifying the CSS, I use [this tool](https://www.toptal.com/developers/cssminifier).
