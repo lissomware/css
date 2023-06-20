@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Lissom.CSS - Classless, minimalist & themeable CSS library</title>
+        <link rel="stylesheet" href="lissom.css" />
+
+        <style>
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            section {
+                margin: 2em 0;
+            }
+
+            #lissom-text {
+                margin: 0;
+            }
+
+            #lissom-text span {
+                background-color: var(--accent-ui);
+                background-image: linear-gradient(to right, var(--accent-ui) 0%, var(--accent) 90%, var(--accent-alt) 100%);
+                background-size: 100%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            #demo {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1 id="lissom-text"><span>Lissom</span>.CSS</h1>
+                <a href="https://github.com/Looky1173">GitHub repository</a>
+            </header>
+            <section>
+                <p>
+                    <strong>The web is bloated.</strong> Trackers, advertisements, third-party JavaScript, custom fonts, unoptimized images, and useless CSS are prevalent on too many websites, all
+                    detrimental to user experience.
+                </p>
+                <p>
+                    <strong>Lissom.CSS is a classless, minimalist, accessible, and themeable CSS library that aims to address the issue of styling web pages.</strong> If you want to go a step further,
+                    ditch whatever bloated web framework you are using and switch to <a href="https://astro.build/">Astro</a>, <a href="https://svelte.dev/">Svelte</a>,
+                    <a href="https://kit.svelte.dev/">SvelteKit</a>, or a static site generator. Optimize your images and use a modern image format, such as
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#webp_image">WebP</a>. Finally, cut down on third-party JS files and ask yourself whether each and
+                    every one of them are <em>truly</em> necessary.
+                </p>
+                <p><a href="lissom.css">Raw source (8.5 KB)</a> • <a href="lissom.min.css">Minified (5.8 KB)</a> • Minified + Brotli compressed (1.4 KB)</p>
+            </section>
+            <hr />
+            <section>
+                <h2>Demo</h2>
+                <article id="demo">
+                    <div>
+                        <code>&lt;p&gt;&lt;/p&gt;</code>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam metus erat, suscipit vehicula arcu quis, pellentesque accumsan ante. Ut dictum placerat pellentesque.
+                            Curabitur ligula neque, varius nec auctor vitae, pharetra ut augue. Cras sem augue, ornare quis lacinia ullamcorper, varius quis dolor. Nam vel diam tempus, posuere tellus
+                            eget, suscipit dolor. Etiam sed libero nunc. Proin nec lorem sed nisl pellentesque sodales. Aliquam a quam leo. Proin mattis malesuada neque non ultrices. Aliquam vitae
+                            metus quis dolor elementum elementum id vel mi.
+                        </p>
+                    </div>
+
+                    <div>
+                        <code>&lt;b&gt;&lt;/b&gt;</code>
+                        <code>&lt;strong&gt;&lt;/strong&gt;</code>
+                        <code>&lt;i&gt;&lt;/i&gt;</code>
+                        <code>&lt;em&gt;&lt;/em&gt;</code>
+                        <code>&lt;a&gt;&lt;/a&gt;</code>
+                        <code>&lt;mark&gt;&lt;/mark&gt;</code>
+                        <p>
+                            This is <b>bolded text</b>, and this is <strong>semantically strong text</strong>. This is <i>italicized text</i>, and this is <em>semantically emphasized text</em>. And
+                            this is <a href="#">a link that leads to nowhere</a>. Here is some text with <s>a strikethrough</s>, and some text with <mark>highlighted words</mark>.
+                        </p>
+                    </div>
+
+                    <div>
+                        <code>&lt;button&gt;&lt;/button&gt;</code>
+                        <p>
+                            <button data-primary>Primary button</button>
+                            <button>Normal button</button>
+                            <button disabled>Disabled button</button>
+                            <br />
+                            <br />
+                            To make a button primary, add the <code>data-primary</code> attribute to it.
+                        </p>
+                    </div>
+
+                    <div>
+                        <code>&lt;kbd&gt;&lt;/kbd&gt;</code>
+                        <p>The key combination <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> performs a hard page reload.</p>
+                    </div>
+
+                    <div>
+                        <code>&lt;blockquote&gt;&lt;/blockquote&gt;</code>
+                        <blockquote>
+                            <p>
+                                This is a blockquote. Maecenas blandit, quam vel sodales facilisis, urna erat fringilla sem, sed egestas quam erat a ipsum. Morbi fermentum odio felis, ultricies
+                                faucibus purus mattis tristique.
+                            </p>
+                        </blockquote>
+                    </div>
+
+                    <div>
+                        <code>&lt;code&gt;&lt;/code&gt;</code>
+                        <code>&lt;pre&gt;&lt;/pre&gt;</code>
+                        <p>The JavaScript method <code>alert()</code> instructs the browser to display a dialog with an optional message, and to wait until the user dismisses the dialog.</p>
+                        <p>Preformatted text can be used to display code, as well ASCII art (the one below comes from <a href="https://wiby.me/" target="_blank">Wiby</a>):</p>
+                        <pre>
+        .n.                     |
+       /___\          _.---.  \ _ /
+       [|||]         (_._ ) )--;_) =-
+       [___]           '---'.__,' \
+       }-=-{                    |
+       |-" |
+       |.-"|                p
+~^=~^~-|_.-|~^-~^~ ~^~ -^~^~|\ ~^-~^~-
+^   .=.| _.|__  ^       ~  /| \
+ ~ /:. \" _|_/\    ~      /_|__\  ^
+.-/::.  |   |""|-._    ^   ~~~~
+  `===-'-----'""`  '-.              ~
+                 __.-'      ^
+                    </pre
+                        >
+                    </div>
+
+                    <div>
+                        <code>&lt;hr /&gt;</code>
+                        <p>The horizontal divider delimitates paragraphs of thematically different content:</p>
+                        <hr />
+                    </div>
+
+                    <div>
+                        <code>&lt;img /&gt;</code>
+                        <p>This image of the Eiffel Tower at Paris comes from Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:Eiffel_Tower..jpg">Source</a></p>
+                        <img src="/assets/Eiffel Tower.webp" alt="At sunset, March 2011. Eiffel Tower in Paris, France." width="2538" height="3791" />
+                    </div>
+
+                    <div>
+                        <code>&lt;table&gt;&lt;/table&gt;</code>
+                        <div style="overflow: auto; margin-top: 1em">
+                            <table>
+                                <caption>
+                                    Data about the planets of our solar system (Planetary facts taken from
+                                    <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a
+                                    >) -
+                                    <a href="https://mdn.github.io/learning-area/html/tables/assessment-finished/planets-data.html">MDN</a>
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2"></th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                                        <th scope="col">Diameter (km)</th>
+                                        <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                                        <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+                                        <th scope="col">Length of day (hours)</th>
+                                        <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+                                        <th scope="col">Mean temperature (°C)</th>
+                                        <th scope="col">Number of moons</th>
+                                        <th scope="col">Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2" rowspan="4" scope="rowgroup">Terrestrial planets</th>
+                                        <th scope="row">Mercury</th>
+                                        <td>0.330</td>
+                                        <td>4,879</td>
+                                        <td>5427</td>
+                                        <td>3.7</td>
+                                        <td>4222.6</td>
+                                        <td>57.9</td>
+                                        <td>167</td>
+                                        <td>0</td>
+                                        <td>Closest to the Sun</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Venus</th>
+                                        <td>4.87</td>
+                                        <td>12,104</td>
+                                        <td>5243</td>
+                                        <td>8.9</td>
+                                        <td>2802.0</td>
+                                        <td>108.2</td>
+                                        <td>464</td>
+                                        <td>0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Earth</th>
+                                        <td>5.97</td>
+                                        <td>12,756</td>
+                                        <td>5514</td>
+                                        <td>9.8</td>
+                                        <td>24.0</td>
+                                        <td>149.6</td>
+                                        <td>15</td>
+                                        <td>1</td>
+                                        <td>Our world</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Mars</th>
+                                        <td>0.642</td>
+                                        <td>6,792</td>
+                                        <td>3933</td>
+                                        <td>3.7</td>
+                                        <td>24.7</td>
+                                        <td>227.9</td>
+                                        <td>-65</td>
+                                        <td>2</td>
+                                        <td>The red planet</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="4" scope="rowgroup">Jovian planets</th>
+                                        <th rowspan="2" scope="rowgroup">Gas giants</th>
+                                        <th scope="row">Jupiter</th>
+                                        <td>1898</td>
+                                        <td>142,984</td>
+                                        <td>1326</td>
+                                        <td>23.1</td>
+                                        <td>9.9</td>
+                                        <td>778.6</td>
+                                        <td>-110</td>
+                                        <td>67</td>
+                                        <td>The largest planet</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Saturn</th>
+                                        <td>568</td>
+                                        <td>120,536</td>
+                                        <td>687</td>
+                                        <td>9.0</td>
+                                        <td>10.7</td>
+                                        <td>1433.5</td>
+                                        <td>-140</td>
+                                        <td>62</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2" scope="rowgroup">Ice giants</th>
+                                        <th scope="row">Uranus</th>
+                                        <td>86.8</td>
+                                        <td>51,118</td>
+                                        <td>1271</td>
+                                        <td>8.7</td>
+                                        <td>17.2</td>
+                                        <td>2872.5</td>
+                                        <td>-195</td>
+                                        <td>27</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Neptune</th>
+                                        <td>102</td>
+                                        <td>49,528</td>
+                                        <td>1638</td>
+                                        <td>11.0</td>
+                                        <td>16.1</td>
+                                        <td>4495.1</td>
+                                        <td>-200</td>
+                                        <td>14</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" scope="rowgroup">Dwarf planets</th>
+                                        <th scope="row">Pluto</th>
+                                        <td>0.0146</td>
+                                        <td>2,370</td>
+                                        <td>2095</td>
+                                        <td>0.7</td>
+                                        <td>153.3</td>
+                                        <td>5906.4</td>
+                                        <td>-225</td>
+                                        <td>5</td>
+                                        <td>
+                                            Declassified as a planet in 2006, but this
+                                            <a href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <code>&lt;progress&gt;&lt;/progress&gt;</code>
+                        <progress value="70" max="100"></progress>
+                        <progress></progress>
+                    </div>
+
+                    <div>
+                        <code>&lt;dialog&gt;&lt;/dialog&gt;</code>
+                        <br />
+                        <br />
+                        <button id="show-demo-dialog">Open dialog</button>
+                        <dialog id="demo-dialog">
+                            <h2 data-no-heading-level style="margin-top: 0">This is a native HTML dialog</h2>
+                            <p>It can be dismissed with the <code>Close</code> button or with the <kbd>Esc</kbd> key.</p>
+                            <form method="dialog">
+                                <button type="submit" autofocus>Close</button>
+                            </form>
+                        </dialog>
+                    </div>
+
+                    <div>
+                        <code>&lt;form&gt;&lt;/form&gt;</code>
+                        <em>Work in progress...</em>
+                        <!--<form>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="john.doe@gmail.com" />
+                            </div>
+
+                            <div>
+                                <label for="id">User id (read only)</label>
+                                <input readonly name="id" id="id" value="04D6H89Z" />
+                            </div>
+
+                            <div>
+                                <label for="disabled">Random disabled input</label>
+                                <input disabled name="disabled" id="disabled" placeholder="Because why not?" />
+                            </div>
+
+                            <div>
+                                <label for="about">About me</label>
+                                <textarea name="about" id="about" placeholder="I am a textarea..."></textarea>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="remember" id="remember" checked />
+                                <label for="remember">Remember me</label>
+                            </div>
+
+                            <input type="submit" />
+                        </form>-->
+                    </div>
+
+                    <div>
+                        <code>&lt;ul&gt;&lt;/ul&gt;</code>
+                        <code>&lt;ol&gt;&lt;/ol&gt;</code>
+                        <code>&lt;li&gt;&lt;/li&gt;</code>
+                        <ul>
+                            <li>Unordered list item 1</li>
+                            <li>Unordered list item 2</li>
+                            <li>Unordered list item 3</li>
+                        </ul>
+                        <ol>
+                            <li>Ordered list item 1</li>
+                            <li>Ordered list item 2</li>
+                            <li>Ordered list item 3</li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <span><code>&lt;h1&gt;&lt;/h1&gt;</code> - <code>&lt;h6&gt;&lt;/h6&gt;</code></span>
+                        <h1 style="font-size: 2em">Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </div>
+                </article>
+            </section>
+            <footer>Lissom.CSS - Created by <a href="https://github.com/Looky1173">@Looky1173</a> - 2023</footer>
+        </main>
+        <script>
+            const dialog = document.getElementById('demo-dialog');
+            const showDialog = document.getElementById('show-demo-dialog');
+
+            showDialog.addEventListener('click', () => {
+                dialog.showModal();
+            });
+        </script>
+    </body>
+</html>
