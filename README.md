@@ -17,6 +17,7 @@ HTML element(s) | Status |
 `<code></code>`, `<pre></pre>` | ✅ |
 `<details></details>` | ❌ |
 `<dialog></dialog>` | ✅ |
+`<dl></dl>`, `<dt></dt>`, `<dd></dd>` | ❌ |
 `<form></form>` | 🟡 |
 `<h1></h1>` - `<h6></h6>` | ✅ |
 `<hr />` | ✅ |
