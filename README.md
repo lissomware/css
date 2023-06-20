@@ -11,14 +11,14 @@ HTML element(s) | Status |
 -------------| :---: |
 `<a></a>` | ✅ |
 `<abbr></abbr>` | ❌ |
-`<b></b>`, `<strong></strong>`, `<i></i>`, `<em></em>`, `<s></s>` | ✅ |
+`<b></b>`, `<strong></strong>`, `<i></i>`,<br />`<em></em>`, `<s></s>` | ✅ |
 `<blockquote></blockquote>` | ✅ |
 `<button></button>` | ✅ |
 `<code></code>`, `<pre></pre>` | ✅ |
 `<details></details>` | ❌ |
 `<dialog></dialog>` | ✅ |
 `<dl></dl>`, `<dt></dt>`, `<dd></dd>` | ❌ |
-`<figure></figure>`, `<figcaption></figcaption>`, `<fieldset></fieldset>`, `<legend></legend>` | ❌ |
+`<figure></figure>`, `<figcaption></figcaption>`,<br />`<fieldset></fieldset>`, `<legend></legend>` | ❌ |
 `<form></form>` | 🟡 |
 `<h1></h1>` - `<h6></h6>` | ✅ |
 `<hr />` | ✅ |
