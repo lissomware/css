@@ -162,7 +162,6 @@ button[data-primary] {
 }
 
 button:disabled {
-    pointer-events: none;
     cursor: not-allowed;
     background-color: var(--tertiary);
     color: var(--secondary);
