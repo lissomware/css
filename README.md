@@ -10,6 +10,7 @@
 HTML element | Status |
 -------------| :---: |
 `<a></a>` | ✅ |
+`<abbr></abbr>` | ❌ |
 `<b></b>`, `<strong></strong>`, `<i></i>`, `<em></em>` | ✅ |
 `<blockquote></blockquote>` | ✅ |
 `<button></button>` | ✅ |
@@ -20,6 +21,7 @@ HTML element | Status |
 `<h1></h1>` - `<h6></h6>` | ✅ |
 `<hr />` | ✅ |
 `<img />` | ✅ |
+`<ins></ins>`, `<del></del> | ❌ |
 `<kbd></kbd>` | ✅ |
 `<mark></mark>` | ✅ |
 `<p></p>` | ✅ |
