@@ -11,7 +11,7 @@ HTML element(s) | Status |
 -------------| :---: |
 `<a></a>` | ✅ |
 `<abbr></abbr>` | ❌ |
-`<b></b>`, `<strong></strong>`, `<i></i>`, `<em></em>` | ✅ |
+`<b></b>`, `<strong></strong>`, `<i></i>`, `<em></em>`, `<s></s>` | ✅ |
 `<blockquote></blockquote>` | ✅ |
 `<button></button>` | ✅ |
 `<code></code>`, `<pre></pre>` | ✅ |
@@ -25,10 +25,12 @@ HTML element(s) | Status |
 `<img />` | ✅ |
 `<ins></ins>`, `<del></del> | ❌ |
 `<kbd></kbd>` | ✅ |
+`<meter></meter>` | ❌ |
 `<mark></mark>` | ✅ |
 `<p></p>` | ✅ |
 `<progress></progress>` | ✅ |
 `<table></table>` | 🟡 |
 `<ul></ul>`, `<ol></ol>`, `<li></li>` | ✅ |
+`<q></q>` | ❌ |
 
 For minifying the CSS, I use [this tool](https://www.toptal.com/developers/cssminifier).
