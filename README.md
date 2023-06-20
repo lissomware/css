@@ -7,4 +7,24 @@
 
 ---
 
+HTML element | Status |
+-------------| :---: |
+`<a></a>` | ✅ |
+`<b></b>`, `<strong></strong>`, `<i></i>`, `<em></em>` | ✅ |
+`<blockquote></blockquote>` | ✅ |
+`<button></button>` | ✅ |
+`<code></code>`, `<pre></pre>` | ✅ |
+`<details></details>` | ❌ |
+`<dialog></dialog>` | ✅ |
+`<form></form>` | 🟡 |
+`<h1></h1>` - `<h6></h6>` | ✅ |
+`<hr />` | ✅ |
+`<img />` | ✅ |
+`<kbd></kbd>` | ✅ |
+`<mark></mark>` | ✅ |
+`<p></p>` | ✅ |
+`<progress></progress>` | ✅ |
+`<table></table>` | 🟡 |
+`<ul></ul>`, `<ol></ol>`, `<li></li>` | ✅ |
+
 For minifying the CSS, I use [this tool](https://www.toptal.com/developers/cssminifier).
