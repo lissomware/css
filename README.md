@@ -23,7 +23,7 @@ HTML element(s) | Status |
 `<h1></h1>` - `<h6></h6>` | ✅ |
 `<hr />` | ✅ |
 `<img />` | ✅ |
-`<ins></ins>`, `<del></del> | ❌ |
+`<ins></ins>`, `<del></del>` | ❌ |
 `<kbd></kbd>` | ✅ |
 `<meter></meter>` | ❌ |
 `<mark></mark>` | ✅ |
