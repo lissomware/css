@@ -7,7 +7,7 @@
 
 ---
 
-HTML element | Status |
+HTML element(s) | Status |
 -------------| :---: |
 `<a></a>` | ✅ |
 `<abbr></abbr>` | ❌ |
