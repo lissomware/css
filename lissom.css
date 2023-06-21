@@ -271,12 +271,20 @@ h1::before {
     color: var(--accent-ui);
 }
 
+h1:dir(rtl)::before {
+    right: -2ch;
+}
+
 h2::before {
     content: '##';
     position: absolute;
     left: -3ch;
     color: var(--accent-ui);
     opacity: 0.9;
+}
+
+h2:dir(rtl)::before {
+    right: -3ch;
 }
 
 h3::before {
@@ -287,12 +295,20 @@ h3::before {
     opacity: 0.8;
 }
 
+h3:dir(rtl)::before {
+    right: -4ch;
+}
+
 h4::before {
     content: '####';
     position: absolute;
     left: -5ch;
     color: var(--accent-ui);
     opacity: 0.7;
+}
+
+h4:dir(rtl)::before {
+    right: -5ch;
 }
 
 h5::before {
@@ -303,12 +319,20 @@ h5::before {
     opacity: 0.6;
 }
 
+h5:dir(rtl)::before {
+    right: -6ch;
+}
+
 h6::before {
     content: '######';
     position: absolute;
     left: -7ch;
     color: var(--accent-ui);
     opacity: 0.5;
+}
+
+h6:dir(rtl)::before {
+    right: -7ch;
 }
 
 h1[data-no-heading-level]::before,
@@ -436,6 +460,10 @@ progress:indeterminate {
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 150% 150%;
+}
+
+progress:indeterminate:dir(rtl) {
+    animation-direction: reverse;
 }
 
 progress:indeterminate::-webkit-progress-bar {
