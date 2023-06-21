@@ -5,7 +5,7 @@
 :root {
     --primary: hsl(265, 38%, 13%);
     --secondary: hsl(283, 6%, 45%);
-    --tertiary: hsl(257, 15%, 91%);
+    --tertiary: hsl(257, 15%, 95%);
     --light: hsl(270, 100%, 99%);
     --accent: hsl(278, 100%, 92%);
     --accent-alt: hsl(279, 100%, 97%);
@@ -173,11 +173,16 @@ button:disabled {
 
 button:focus-visible,
 input:focus-visible,
-textarea:focus-visible {
+textarea:focus-visible,
+details:has(summary:focus-visible) {
     box-shadow: 0 0 0 0.2em var(--light), 0 0 0 0.4em var(--accent-ui);
     outline: none;
     z-index: 2;
     animation: 1s infinite pulseBorder linear alternate-reverse;
+}
+
+details:has(summary:focus-visible) summary {
+    outline: none;
 }
 
 @keyframes pulseBorder {
@@ -195,6 +200,28 @@ code {
     border-radius: 0.3em;
     font-family: monospace;
     padding: 0.1em 0.2em;
+}
+
+details {
+    border: 0.1em solid var(--secondary);
+    border-radius: 0.3em;
+    padding: 0.5em;
+    margin: 1em 0;
+    background-color: var(--tertiary);
+}
+
+summary {
+    font-weight: bold;
+}
+
+details[open] {
+    background-color: var(--accent-alt);
+}
+
+details[open] summary {
+    border-bottom: 0.1em solid var(--accent);
+    padding-bottom: 0.3em;
+    margin-bottom: 0.7em;
 }
 
 dialog {
@@ -222,7 +249,7 @@ form > div {
     flex-direction: column;
 }
 
-form > div:has(input[type="checkbox"]) {
+form > div:has(input[type='checkbox']) {
     flex-direction: row;
     align-items: center;
     gap: 0.2em;
@@ -328,7 +355,7 @@ textarea {
     background-color: var(--tertiary);
     border: 1px solid var(--secondary);
     padding: 0.4em 1em;
-    border-radius: 0.3em; 
+    border-radius: 0.3em;
     font-size: inherit;
     font-family: inherit;
     position: relative;

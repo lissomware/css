@@ -15,7 +15,7 @@ HTML element(s) | Status |
 `<blockquote></blockquote>` | ✅ |
 `<button></button>` | ✅ |
 `<code></code>`, `<pre></pre>` | ✅ |
-`<details></details>` | ❌ |
+`<details></details>` | ✅ |
 `<dialog></dialog>` | ✅ |
 `<dl></dl>`, `<dt></dt>`, `<dd></dd>` | ❌ |
 `<figure></figure>`, `<figcaption></figcaption>`,<br />`<fieldset></fieldset>`, `<legend></legend>` | ❌ |
