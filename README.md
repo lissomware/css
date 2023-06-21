@@ -33,4 +33,6 @@ HTML element(s) | Status |
 `<ul></ul>`, `<ol></ol>`, `<li></li>` | ✅ |
 `<q></q>` | ❌ |
 
+Legend: ✅ supported; 🟡 partially supported (WIP); ❌ not yet supported but will be in the future
+
 For minifying the CSS, I use [this tool](https://www.toptal.com/developers/cssminifier).
