@@ -10,6 +10,8 @@
     --accent: hsl(278, 100%, 92%);
     --accent-alt: hsl(279, 100%, 97%);
     --accent-ui: hsl(284, 55%, 66%);
+    --semantic-green: hsl(88, 76%, 83%);
+    --semantic-red: hsl(0, 76%, 83%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +23,8 @@
         --accent: hsl(282, 25%, 40%);
         --accent-alt: hsl(278, 14%, 20%);
         --accent-ui: hsl(284, 55%, 66%);
+        --semantic-green: hsl(88, 35%, 40%);
+        --semantic-red: hsl(0, 35%, 40%);
     }
 }
 
@@ -519,4 +523,12 @@ tr:nth-child(even) td {
 
 tr:nth-child(odd) td {
     background-color: var(--tertiary);
+}
+
+ins {
+    background-color: var(--semantic-green);
+}
+
+del {
+    background-color: var(--semantic-red);
 }
