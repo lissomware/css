@@ -145,6 +145,10 @@ input[type='submit'] {
     position: relative;
 }
 
+input::placeholder {
+    font-style: italic;
+}
+
 button:hover,
 input[type='submit']:hover {
     opacity: 0.7;
