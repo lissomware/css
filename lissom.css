@@ -155,7 +155,8 @@ input[type='submit']:active {
     opacity: 0.9;
 }
 
-button[data-primary] {
+button[data-primary],
+input[type='submit'] {
     color: var(--light);
     background-color: var(--accent-ui);
     border-color: var(--accent-ui);
@@ -167,7 +168,8 @@ button[data-primary] {
     font-weight: bold;
 }
 
-button:disabled {
+button:disabled,
+input[type='submit']:disabled {
     cursor: not-allowed;
     background-color: var(--tertiary);
     color: var(--secondary);
