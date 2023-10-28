@@ -374,7 +374,7 @@ hr:after {
 
 img {
     border-radius: 0.6em;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     transition: border-radius 100ms linear;
 }
@@ -538,3 +538,5 @@ ins {
 del {
     background-color: var(--semantic-red);
 }
+
+::selection {background-color: lavender}
